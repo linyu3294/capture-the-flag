@@ -10,13 +10,17 @@
 		0D09F544663839E7BA161325 /* Pods_capture_the_flag_capture_the_flagUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA489914A594EB7F10BD77E /* Pods_capture_the_flag_capture_the_flagUITests.framework */; };
 		1E64D0988344E759212CC910 /* Pods_capture_the_flag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5FD965EF4964EABB23E794 /* Pods_capture_the_flag.framework */; };
 		3DA67802A519473EFFC3DB79 /* Pods_capture_the_flagTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7E21D8890763702AB3EE14 /* Pods_capture_the_flagTests.framework */; };
-		624E315A257B9A2E0061AAA6 /* capture_the_flagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3159257B9A2E0061AAA6 /* capture_the_flagApp.swift */; };
-		624E315C257B9A2E0061AAA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E315B257B9A2E0061AAA6 /* ContentView.swift */; };
+		623636BC2584508400A86E35 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623636BB2584508400A86E35 /* Player.swift */; };
+		623636CA25845A2C00A86E35 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623636C925845A2C00A86E35 /* Board.swift */; };
+		623636D825849F3600A86E35 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623636D725849F3600A86E35 /* LocationManager.swift */; };
+		623636E025859CF400A86E35 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623636DF25859CF400A86E35 /* Channel.swift */; };
+		623636E82585AD7400A86E35 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623636E72585AD7400A86E35 /* GameController.swift */; };
+		624E315A257B9A2E0061AAA6 /* capture_the_flag_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3159257B9A2E0061AAA6 /* capture_the_flag_app.swift */; };
 		624E315E257B9A350061AAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624E315D257B9A350061AAA6 /* Assets.xcassets */; };
 		624E3161257B9A350061AAA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624E3160257B9A350061AAA6 /* Preview Assets.xcassets */; };
 		624E316C257B9A350061AAA6 /* capture_the_flagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E316B257B9A350061AAA6 /* capture_the_flagTests.swift */; };
 		624E3177257B9A350061AAA6 /* capture_the_flagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3176257B9A350061AAA6 /* capture_the_flagUITests.swift */; };
-		624E3194257B9E7C0061AAA6 /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3193257B9E7C0061AAA6 /* GoogleMapView.swift */; };
+		624E3194257B9E7C0061AAA6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3193257B9E7C0061AAA6 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +45,13 @@
 		3A5FD965EF4964EABB23E794 /* Pods_capture_the_flag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capture_the_flag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C650F0BA2933D0A8F449838 /* Pods-capture-the-flag-capture-the-flagUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capture-the-flag-capture-the-flagUITests.release.xcconfig"; path = "Target Support Files/Pods-capture-the-flag-capture-the-flagUITests/Pods-capture-the-flag-capture-the-flagUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A443A4A5CE0AB7D4D8F4588 /* Pods-capture-the-flagTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capture-the-flagTests.release.xcconfig"; path = "Target Support Files/Pods-capture-the-flagTests/Pods-capture-the-flagTests.release.xcconfig"; sourceTree = "<group>"; };
+		623636BB2584508400A86E35 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		623636C925845A2C00A86E35 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		623636D725849F3600A86E35 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		623636DF25859CF400A86E35 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		623636E72585AD7400A86E35 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		624E3156257B9A2E0061AAA6 /* capture-the-flag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capture-the-flag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		624E3159257B9A2E0061AAA6 /* capture_the_flagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capture_the_flagApp.swift; sourceTree = "<group>"; };
-		624E315B257B9A2E0061AAA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		624E3159257B9A2E0061AAA6 /* capture_the_flag_app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capture_the_flag_app.swift; sourceTree = "<group>"; };
 		624E315D257B9A350061AAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		624E3160257B9A350061AAA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		624E3162257B9A350061AAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +61,7 @@
 		624E3172257B9A350061AAA6 /* capture-the-flagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "capture-the-flagUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		624E3176257B9A350061AAA6 /* capture_the_flagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capture_the_flagUITests.swift; sourceTree = "<group>"; };
 		624E3178257B9A350061AAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		624E3193257B9E7C0061AAA6 /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+		624E3193257B9E7C0061AAA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6DA489914A594EB7F10BD77E /* Pods_capture_the_flag_capture_the_flagUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_capture_the_flag_capture_the_flagUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		946C49251371D11B12729C12 /* Pods-capture-the-flagTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capture-the-flagTests.debug.xcconfig"; path = "Target Support Files/Pods-capture-the-flagTests/Pods-capture-the-flagTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFD08FAD066B198CB6165B65 /* Pods-capture-the-flag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capture-the-flag.release.xcconfig"; path = "Target Support Files/Pods-capture-the-flag/Pods-capture-the-flag.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,11 +122,15 @@
 		624E3158257B9A2E0061AAA6 /* capture-the-flag */ = {
 			isa = PBXGroup;
 			children = (
-				624E3159257B9A2E0061AAA6 /* capture_the_flagApp.swift */,
-				624E315B257B9A2E0061AAA6 /* ContentView.swift */,
-				624E3193257B9E7C0061AAA6 /* GoogleMapView.swift */,
-				624E315D257B9A350061AAA6 /* Assets.xcassets */,
+				624E3159257B9A2E0061AAA6 /* capture_the_flag_app.swift */,
+				624E3193257B9E7C0061AAA6 /* MapView.swift */,
+				623636E72585AD7400A86E35 /* GameController.swift */,
+				623636D725849F3600A86E35 /* LocationManager.swift */,
+				623636BB2584508400A86E35 /* Player.swift */,
+				623636C925845A2C00A86E35 /* Board.swift */,
+				623636DF25859CF400A86E35 /* Channel.swift */,
 				624E3162257B9A350061AAA6 /* Info.plist */,
+				624E315D257B9A350061AAA6 /* Assets.xcassets */,
 				624E315F257B9A350061AAA6 /* Preview Content */,
 			);
 			path = "capture-the-flag";
@@ -185,6 +197,7 @@
 				624E3153257B9A2E0061AAA6 /* Frameworks */,
 				624E3154257B9A2E0061AAA6 /* Resources */,
 				A96E2BC3EDB1AC2D2356E88B /* [CP] Copy Pods Resources */,
+				28C43E5DAE2B18114A8E68F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +236,7 @@
 				624E316F257B9A350061AAA6 /* Frameworks */,
 				624E3170257B9A350061AAA6 /* Resources */,
 				0AF1D5701C235CA0AAA263F1 /* [CP] Copy Pods Resources */,
+				D9526646095C4AFB327651D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +334,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-capture-the-flag-capture-the-flagUITests/Pods-capture-the-flag-capture-the-flagUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		28C43E5DAE2B18114A8E68F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-capture-the-flag/Pods-capture-the-flag-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-capture-the-flag/Pods-capture-the-flag-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-capture-the-flag/Pods-capture-the-flag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3631B55739C9C99E3F10C39A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +434,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-capture-the-flag/Pods-capture-the-flag-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D9526646095C4AFB327651D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-capture-the-flag-capture-the-flagUITests/Pods-capture-the-flag-capture-the-flagUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-capture-the-flag-capture-the-flagUITests/Pods-capture-the-flag-capture-the-flagUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-capture-the-flag-capture-the-flagUITests/Pods-capture-the-flag-capture-the-flagUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -410,9 +458,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624E3194257B9E7C0061AAA6 /* GoogleMapView.swift in Sources */,
-				624E315C257B9A2E0061AAA6 /* ContentView.swift in Sources */,
-				624E315A257B9A2E0061AAA6 /* capture_the_flagApp.swift in Sources */,
+				623636BC2584508400A86E35 /* Player.swift in Sources */,
+				623636E82585AD7400A86E35 /* GameController.swift in Sources */,
+				623636E025859CF400A86E35 /* Channel.swift in Sources */,
+				624E3194257B9E7C0061AAA6 /* MapView.swift in Sources */,
+				623636CA25845A2C00A86E35 /* Board.swift in Sources */,
+				623636D825849F3600A86E35 /* LocationManager.swift in Sources */,
+				624E315A257B9A2E0061AAA6 /* capture_the_flag_app.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
