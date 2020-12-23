@@ -9,7 +9,7 @@ target 'capture-the-flag' do
   
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod 'Polyline', '~> 5.0'  
+  pod 'ReSwift'
 
   target 'capture-the-flagTests' do
     inherit! :search_paths
@@ -17,7 +17,6 @@ target 'capture-the-flag' do
   end
 
   target 'capture-the-flagUITests' do
-    # Pods for testing
   end
 
 end
