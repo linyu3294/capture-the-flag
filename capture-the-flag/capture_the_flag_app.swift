@@ -11,10 +11,6 @@ import ReSwift
 
 
 
-let mainStore = Store<AppState>(
-    reducer: counterReducer,
-    state: nil
-)
 
 @main
 struct capture_the_flag_app: App {

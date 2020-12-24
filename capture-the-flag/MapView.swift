@@ -10,7 +10,14 @@ import SwiftUI
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import ReSwift
 
+
+
+let mainStore = Store<AppState>(
+    reducer: Reducer,
+    state: nil
+)
 
 struct MapView: UIViewRepresentable, View {
     
@@ -18,9 +25,7 @@ struct MapView: UIViewRepresentable, View {
     var latitude = (42.349634 + 42.33666532) / 2
     var longitude = (-71.099688  - 71.08749965) / 2
 
-    
-    
-    
+
     /// Creates a `UIView` instance to be presented.
     func makeUIView(context: Self.Context) -> GMSMapView {
         GMSServices.provideAPIKey("AIzaSyDw2Q08LcAEE5qHKUQLLi4P-RAx0RSq5nc")
