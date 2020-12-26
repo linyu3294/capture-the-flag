@@ -17,6 +17,10 @@ func Reducer(action: Action, state: AppState?) -> AppState {
         state.counter += 1
     case _ as CounterActionDecrease:
         state.counter -= 1
+    case _ as SwitchToMapAction:
+        state.viewType = ViewType.MAP
+    case _ as CounterActionDecrease:
+        state.viewType = ViewType.CONSOLE
     default:
         break
     }

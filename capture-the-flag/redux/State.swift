@@ -6,6 +6,12 @@
 //
 import ReSwift
 
+enum ViewType {
+    case MAP
+    case CONSOLE
+}
+
 struct AppState: StateType {
     var counter: Int = 0
+    var viewType: ViewType?
 }

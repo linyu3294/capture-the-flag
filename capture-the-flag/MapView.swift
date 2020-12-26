@@ -14,10 +14,6 @@ import ReSwift
 
 
 
-let mainStore = Store<AppState>(
-    reducer: Reducer,
-    state: nil
-)
 
 struct MapView: UIViewRepresentable, View {
     
@@ -39,12 +35,27 @@ struct MapView: UIViewRepresentable, View {
         path.add(CLLocationCoordinate2D(latitude: 42.29, longitude: -71.11))
         path.add(CLLocationCoordinate2D(latitude: 42.32, longitude: -71.9))
         path.add(CLLocationCoordinate2D(latitude: 42.345, longitude: -71.08))
-
+        
         let polyline = GMSPolyline(path: path)
         polyline.strokeColor = .lightGray
         polyline.strokeWidth = 200.0
      
-    
+        
+        mainStore.dispatch(CounterActionIncrease())
+        print(mainStore.state.counter)
+        mainStore.dispatch(CounterActionIncrease())
+        print(mainStore.state.counter)
+        mainStore.dispatch(CounterActionIncrease())
+        print(mainStore.state.counter)
+        mainStore.dispatch(CounterActionDecrease())
+        print(mainStore.state.counter)
+        mainStore.dispatch(CounterActionDecrease())
+        print(mainStore.state.counter)
+        mainStore.dispatch(CounterActionDecrease())
+        print(mainStore.state.counter)
+        
+        
+        
         //These should be in Main or AppDelegate
         var manager = CLLocationManager ()
         let gameController = GameController()

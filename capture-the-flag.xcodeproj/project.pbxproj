@@ -10,6 +10,8 @@
 		623636BC2584508400A86E35 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623636BB2584508400A86E35 /* Player.swift */; };
 		623636E82585AD7400A86E35 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623636E72585AD7400A86E35 /* GameController.swift */; };
 		623EDB112594E6C2006AF66E /* Pods_capture_the_flag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C2A83413B94B6DFAA7939 /* Pods_capture_the_flag.framework */; };
+		6248D1EA2596747D009D9199 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248D1E92596747D009D9199 /* NavigationView.swift */; };
+		6248D1F525967760009D9199 /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248D1F425967760009D9199 /* ConsoleView.swift */; };
 		624C77D2258B134B00FE8982 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C77D1258B134B00FE8982 /* Action.swift */; };
 		624C77E6258B170100FE8982 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C77E5258B170100FE8982 /* Reducer.swift */; };
 		624E315A257B9A2E0061AAA6 /* capture_the_flag_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3159257B9A2E0061AAA6 /* capture_the_flag_app.swift */; };
@@ -18,7 +20,7 @@
 		624E316C257B9A350061AAA6 /* capture_the_flagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E316B257B9A350061AAA6 /* capture_the_flagTests.swift */; };
 		624E3177257B9A350061AAA6 /* capture_the_flagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3176257B9A350061AAA6 /* capture_the_flagUITests.swift */; };
 		624E3194257B9E7C0061AAA6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3193257B9E7C0061AAA6 /* MapView.swift */; };
-		6252F383258FDD84005A30B1 /* viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252F382258FDD84005A30B1 /* viewController.swift */; };
+		6252F383258FDD84005A30B1 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252F382258FDD84005A30B1 /* Controller.swift */; };
 		62D8C2482592E0DA005D85CD /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C2472592E0DA005D85CD /* State.swift */; };
 		6F3DB3F195282CB73AF75C44 /* Pods_capture_the_flagTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CBEC08517F176E4E0ECF2B /* Pods_capture_the_flagTests.framework */; };
 		C54CC310ADF3C3A81D704A70 /* Pods_capture_the_flag_capture_the_flagUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7278D685D69C9875A209FC /* Pods_capture_the_flag_capture_the_flagUITests.framework */; };
@@ -48,6 +50,8 @@
 		5EC37C5BAFC6F04F571DEB96 /* Pods-capture-the-flagTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capture-the-flagTests.debug.xcconfig"; path = "Target Support Files/Pods-capture-the-flagTests/Pods-capture-the-flagTests.debug.xcconfig"; sourceTree = "<group>"; };
 		623636BB2584508400A86E35 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		623636E72585AD7400A86E35 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		6248D1E92596747D009D9199 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		6248D1F425967760009D9199 /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
 		624C77D1258B134B00FE8982 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		624C77E5258B170100FE8982 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		624E3156257B9A2E0061AAA6 /* capture-the-flag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "capture-the-flag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +66,7 @@
 		624E3176257B9A350061AAA6 /* capture_the_flagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capture_the_flagUITests.swift; sourceTree = "<group>"; };
 		624E3178257B9A350061AAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624E3193257B9E7C0061AAA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		6252F382258FDD84005A30B1 /* viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewController.swift; sourceTree = "<group>"; };
+		6252F382258FDD84005A30B1 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		62D8C2242592DD3F005D85CD /* ReSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D8C2472592E0DA005D85CD /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		64C525DB0D1AC0A0F6A72817 /* Pods-capture-the-flag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capture-the-flag.debug.xcconfig"; path = "Target Support Files/Pods-capture-the-flag/Pods-capture-the-flag.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,7 +110,7 @@
 				62D8C2472592E0DA005D85CD /* State.swift */,
 				624C77D1258B134B00FE8982 /* Action.swift */,
 				624C77E5258B170100FE8982 /* Reducer.swift */,
-				6252F382258FDD84005A30B1 /* viewController.swift */,
+				6252F382258FDD84005A30B1 /* Controller.swift */,
 			);
 			path = redux;
 			sourceTree = "<group>";
@@ -115,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				624E3158257B9A2E0061AAA6 /* capture-the-flag */,
-				624E316A257B9A350061AAA6 /* capture-the-flagTests */,
 				624E3175257B9A350061AAA6 /* capture-the-flagUITests */,
 				624E3157257B9A2E0061AAA6 /* Products */,
 				F247FA9194182C2EDA06B749 /* Pods */,
@@ -138,12 +141,15 @@
 			children = (
 				623EDB4825950E44006AF66E /* redux */,
 				624E3159257B9A2E0061AAA6 /* capture_the_flag_app.swift */,
+				6248D1E92596747D009D9199 /* NavigationView.swift */,
+				6248D1F425967760009D9199 /* ConsoleView.swift */,
 				624E3193257B9E7C0061AAA6 /* MapView.swift */,
 				623636E72585AD7400A86E35 /* GameController.swift */,
 				623636BB2584508400A86E35 /* Player.swift */,
 				624E3162257B9A350061AAA6 /* Info.plist */,
 				624E315D257B9A350061AAA6 /* Assets.xcassets */,
 				624E315F257B9A350061AAA6 /* Preview Content */,
+				624E316A257B9A350061AAA6 /* capture-the-flagTests */,
 			);
 			path = "capture-the-flag";
 			sourceTree = "<group>";
@@ -472,12 +478,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				624C77D2258B134B00FE8982 /* Action.swift in Sources */,
+				6248D1EA2596747D009D9199 /* NavigationView.swift in Sources */,
 				623636BC2584508400A86E35 /* Player.swift in Sources */,
 				623636E82585AD7400A86E35 /* GameController.swift in Sources */,
 				624C77E6258B170100FE8982 /* Reducer.swift in Sources */,
 				62D8C2482592E0DA005D85CD /* State.swift in Sources */,
+				6248D1F525967760009D9199 /* ConsoleView.swift in Sources */,
 				624E3194257B9E7C0061AAA6 /* MapView.swift in Sources */,
-				6252F383258FDD84005A30B1 /* viewController.swift in Sources */,
+				6252F383258FDD84005A30B1 /* Controller.swift in Sources */,
 				624E315A257B9A2E0061AAA6 /* capture_the_flag_app.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
