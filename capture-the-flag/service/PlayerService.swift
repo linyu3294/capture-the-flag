@@ -10,7 +10,7 @@ import Foundation
 
 
 func getPlayerLocation () -> () {
-    let url = URL(string: "http://169.254.179.148:8080/api/player")!
+    let url = URL(string: "http://" + localhost + ":8080/api/player")!
     var request = URLRequest(url: url)
     request.httpMethod = "GET"
     
@@ -18,7 +18,5 @@ func getPlayerLocation () -> () {
         guard let data = data else { return }
         print(String(data: data, encoding: .utf8)!)
     }
-
 }
-
 

@@ -9,24 +9,12 @@ import Foundation
 import SwiftUI
 import ReSwift
 
+let localhost = "localhost"
 
 let mainStore = Store(
     reducer: Reducer,
     state: AppState(),
     middleware: [])
-
-//
-//@UIApplicationMain
-//class AppDelegate: UIResponder, UIApplicationDelegate {
-//
-//    var window: UIWindow?
-//
-//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//
-//        return true
-//    }
-//
-//}
 
 @main
 struct capture_the_flag_app: App {
