@@ -16,7 +16,6 @@ import ReSwift
 
 
 struct MapView: UIViewRepresentable, View {
-    
     //TODO: move lat, long out of the view. These should belong in the controller.
     var latitude = (42.349634 + 42.33666532) / 2
     var longitude = (-71.099688  - 71.08749965) / 2
@@ -70,7 +69,6 @@ struct MapView: UIViewRepresentable, View {
     }
     
     
-
     /// Updates the presented `UIView` (and coordinator) to the latest
     /// configuration.
     func updateUIView(_ mapView: GMSMapView, context: Self.Context) {
@@ -80,10 +78,8 @@ struct MapView: UIViewRepresentable, View {
         let player2 =  Player()
         player2.createPlayer(a: 42.33666532, b: -71.08749965).map = mapView
         drawBoard()
-    }
-    
+        }
     func drawBoard () {
-    
     }
 
 

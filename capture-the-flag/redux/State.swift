@@ -13,5 +13,5 @@ enum ViewType {
 
 struct AppState: StateType {
     var counter: Int = 0
-    var viewType: ViewType?
+    var viewType: String? = "Map View"
 }

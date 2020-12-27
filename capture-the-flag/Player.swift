@@ -10,8 +10,6 @@ import UIKit
 import GoogleMaps
 
 struct Player {
-    
-    
     func createPlayer (a:CLLocationDegrees,
                        b:CLLocationDegrees) -> GMSMarker {
         let marker2 : GMSMarker = GMSMarker()
@@ -21,5 +19,4 @@ struct Player {
         marker2.snippet = "Boston"
         return marker2
     }
-    
 }
