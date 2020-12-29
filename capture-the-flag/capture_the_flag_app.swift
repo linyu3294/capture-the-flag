@@ -3,13 +3,11 @@
 //  capture-the-flag
 //
 //  Created by Yu Lin on 12/5/20.
-
-
 import Foundation
 import SwiftUI
 import ReSwift
 
-let localhost = "localhost"
+let localhost = "169.254.119.172"
 
 let mainStore = Store(
     reducer: Reducer,
@@ -24,7 +22,6 @@ struct capture_the_flag_app: App {
         }
     }
 }
-
 
 struct capture_the_flag_app_Previews: PreviewProvider {
     static var previews: some View {

@@ -1,4 +1,7 @@
 PODS:
+  - Apollo (0.39.0):
+    - Apollo/Core (= 0.39.0)
+  - Apollo/Core (0.39.0)
   - GoogleMaps (4.0.0):
     - GoogleMaps/Maps (= 4.0.0)
   - GoogleMaps/Base (4.0.0)
@@ -9,21 +12,24 @@ PODS:
   - ReSwift (6.0.0)
 
 DEPENDENCIES:
+  - Apollo
   - GoogleMaps
   - GooglePlaces
   - ReSwift
 
 SPEC REPOS:
   trunk:
+    - Apollo
     - GoogleMaps
     - GooglePlaces
     - ReSwift
 
 SPEC CHECKSUMS:
+  Apollo: f6c6410ebee82dd5846be87b81cedc8bc7754a82
   GoogleMaps: b7f7fc569a9b354a3af0d9729dbec40957b7d41e
   GooglePlaces: ca8d4aba09ba79e0a829cf1dca03a41de6a09016
   ReSwift: 14e6f9409fe6bdc635e588208296a01f43b959c9
 
-PODFILE CHECKSUM: 080dd92369e94886a3a83146ed3ab23f16e56003
+PODFILE CHECKSUM: b0ebed90d7c77dc5bc55d81b1dfaeb7a6596a43a
 
 COCOAPODS: 1.10.0

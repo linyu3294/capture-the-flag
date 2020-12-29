@@ -22,6 +22,9 @@
 		624E3177257B9A350061AAA6 /* capture_the_flagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3176257B9A350061AAA6 /* capture_the_flagUITests.swift */; };
 		624E3194257B9E7C0061AAA6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E3193257B9E7C0061AAA6 /* MapView.swift */; };
 		6252F383258FDD84005A30B1 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252F382258FDD84005A30B1 /* Controller.swift */; };
+		62A3265D259ADB9B007A9554 /* players.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 62A3265C259ADB9B007A9554 /* players.graphql */; };
+		62A32694259BBD38007A9554 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A32693259BBD38007A9554 /* API.swift */; };
+		62A32699259BBD93007A9554 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 62A32698259BBD93007A9554 /* schema.json */; };
 		62D8C2482592E0DA005D85CD /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C2472592E0DA005D85CD /* State.swift */; };
 		6F3DB3F195282CB73AF75C44 /* Pods_capture_the_flagTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CBEC08517F176E4E0ECF2B /* Pods_capture_the_flagTests.framework */; };
 		C54CC310ADF3C3A81D704A70 /* Pods_capture_the_flag_capture_the_flagUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7278D685D69C9875A209FC /* Pods_capture_the_flag_capture_the_flagUITests.framework */; };
@@ -69,6 +72,10 @@
 		624E3178257B9A350061AAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624E3193257B9E7C0061AAA6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6252F382258FDD84005A30B1 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		62A3265C259ADB9B007A9554 /* players.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = players.graphql; sourceTree = "<group>"; };
+		62A32692259BBD37007A9554 /* operationIDs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = operationIDs.json; path = "/Users/yulin/Documents/capture-the-flag/capture-the-flag/service/operationIDs.json"; sourceTree = "<absolute>"; };
+		62A32693259BBD38007A9554 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = API.swift; path = "/Users/yulin/Documents/capture-the-flag/capture-the-flag/service/API.swift"; sourceTree = "<absolute>"; };
+		62A32698259BBD93007A9554 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		62D8C2242592DD3F005D85CD /* ReSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D8C2472592E0DA005D85CD /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		64C525DB0D1AC0A0F6A72817 /* Pods-capture-the-flag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-capture-the-flag.debug.xcconfig"; path = "Target Support Files/Pods-capture-the-flag/Pods-capture-the-flag.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				6248D20725980039009D9199 /* PlayerService.swift */,
+				62A32693259BBD38007A9554 /* API.swift */,
+				62A32692259BBD37007A9554 /* operationIDs.json */,
+				62A32698259BBD93007A9554 /* schema.json */,
+				62A3265C259ADB9B007A9554 /* players.graphql */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -223,6 +234,7 @@
 			buildConfigurationList = 624E317B257B9A350061AAA6 /* Build configuration list for PBXNativeTarget "capture-the-flag" */;
 			buildPhases = (
 				DB1EB7CBBF80C66B8D5EA726 /* [CP] Check Pods Manifest.lock */,
+				62A32661259AE10E007A9554 /* Generate Apollo GraphQL API */,
 				624E3152257B9A2E0061AAA6 /* Sources */,
 				624E3153257B9A2E0061AAA6 /* Frameworks */,
 				624E3154257B9A2E0061AAA6 /* Resources */,
@@ -234,6 +246,8 @@
 			dependencies = (
 			);
 			name = "capture-the-flag";
+			packageProductDependencies = (
+			);
 			productName = "capture-the-flag";
 			productReference = 624E3156257B9A2E0061AAA6 /* capture-the-flag.app */;
 			productType = "com.apple.product-type.application";
@@ -309,6 +323,8 @@
 				Base,
 			);
 			mainGroup = 624E314D257B9A2E0061AAA6;
+			packageReferences = (
+			);
 			productRefGroup = 624E3157257B9A2E0061AAA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -325,7 +341,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A32699259BBD93007A9554 /* schema.json in Resources */,
 				624E3161257B9A350061AAA6 /* Preview Assets.xcassets in Resources */,
+				62A3265D259ADB9B007A9554 /* players.graphql in Resources */,
 				624E315E257B9A350061AAA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +403,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		62A32661259AE10E007A9554 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=http://localhost:8080/query schema.json\n";
 		};
 		82DFE4578A24C469A3321CED /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -498,6 +534,7 @@
 				6248D2082598003A009D9199 /* PlayerService.swift in Sources */,
 				624E3194257B9E7C0061AAA6 /* MapView.swift in Sources */,
 				6252F383258FDD84005A30B1 /* Controller.swift in Sources */,
+				62A32694259BBD38007A9554 /* API.swift in Sources */,
 				624E315A257B9A2E0061AAA6 /* capture_the_flag_app.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

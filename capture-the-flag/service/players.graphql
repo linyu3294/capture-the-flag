@@ -1,0 +1,10 @@
+
+mutation createChannel {
+  createChannel(input: {channel: {name: "Channel 1", platform: {name: "Platform for channel 1"}}}) {
+    id
+    name
+    platform {
+      name
+    }
+  }
+}

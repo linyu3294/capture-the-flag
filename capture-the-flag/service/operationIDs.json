@@ -1,0 +1,6 @@
+{
+  "1957be5e20438d69cd0f43f1c939e8d9b13fdfe32ada3c184b5ff1cb1c44795a": {
+    "name": "createChannel",
+    "source": "mutation createChannel {\n  createChannel(input: {channel: {name: \"Channel 1\", platform: {name: \"Platform for channel 1\"}}}) {\n    __typename\n    id\n    name\n    platform {\n      __typename\n      name\n    }\n  }\n}"
+  }
+}
